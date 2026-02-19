@@ -1,0 +1,23 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+*{
+    background-color: blue;
+}
+@media screen and (max-width:576px){
+    body{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:576px) and (max-width:768px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
